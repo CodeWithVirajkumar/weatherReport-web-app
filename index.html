@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Report</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+
+    <video src="videoplayback.mp4" autoplay loop muted></video>
+
+<div class="weatherCard">
+
+    <!-- useer input -->
+
+    <form class="form">
+        <h1>Weather Report</h1>
+            <div class="weatherInput">
+                <input type="text" placeholder="Enter your city" class="weatherEntery">
+                <i class="fa-solid fa-magnifying-glass" id="searchBtn"></i>
+            </div>
+    </form>
+
+    <!-- weather details of specific place that you enter in use input -->
+
+    <div class="weatherInfo">
+        <div class="weatherImage">
+            <img src="cloud.png" alt="image" class="weatherImg">
+        </div>
+
+        <p class="temp">20<sup>°C</sup></p>
+        <h1 class="cloudy">cloudy</h1>
+        
+        <div class="weatherDetails">
+
+            <div class="humid">
+                <p>Humidity:</p><span class="humidity">45%</span>
+            </div>
+
+            <div class="wind">
+                <p>Wind Speed:</p><span class="speed">12km</span>
+            </div>
+
+        </div>
+
+    </div>
+
+
+</div>
+
+    <script src="script.js"></script>
+</body>
+</html>
